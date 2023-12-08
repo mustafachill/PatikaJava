@@ -1,7 +1,6 @@
 public class Main{
     public static void main(String[] args){
-        Car audi = new Car();
-        audi.speed = 20;
+        Car audi = new Car("audi", 100);
         audi.increaseSpeed(120);
         System.out.println(audi.speed);
 

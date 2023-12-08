@@ -4,6 +4,15 @@ public class Car {
     String color;
     int speed;
     int speedLimit = 100;
+
+    Car(){
+        System.out.println("Working constructor method which has not parameters");
+    }
+    Car(String model, int speed){
+        this.model = model;
+        this.speed = speed;
+        System.out.println("Working constructor method which has parameters");
+    }
     void increaseSpeed(int increment){
         if((speed + increment) < speedLimit){
             speed += increment;
